@@ -1,1 +1,146 @@
-Contact Us Page
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBTS Contact Info</title>
+</head>
+<body>
+
+    <!--
+        TODO:
+        1/ Create shop.html Page
+        2/ Add CSS Styling
+    -->
+    <header>
+        <h1>Black Billionaire's Tech Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">shop</a></li>
+                <li><a href="contact.html">contacts</a></li>
+            </ul>
+        </nav>
+        <input type="search" placeholder="search...">
+    </header>
+
+    <aside>
+        <h2>Shop By:</h2>
+        <section>
+            <h3>Category</h3>
+            <hr>
+            <ul>
+                <li>All Items</li>
+                <li>Cameras</li>
+                <li>Phones</li>
+                <li>Computers</li>
+                <li>Wearables</li>
+                <li>Others</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Price <span>($)</span></h3>
+            <hr>
+            <ul>
+                <li>Below $10</li>
+                <li>$10 - $29</li>
+                <li>$30 - $59</li>
+                <li>$60 - $99</li>
+                <li>Above $100</li>
+            </ul>
+        </section>
+    </aside>
+
+    <!-- Main Section to Display Products -->
+    <main>
+        <h2>Contacts</h2>
+      
+        <form action="" method="">
+            <div>
+                <label for="name">Name: </label><input type="text" placeholder="Enter Your Name" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email: </label><input type="email" placeholder="Enter Your Email" id="email" name="email">
+            </div>
+            <div>
+                <label for="message">Message: </label><textarea cols="30" rows="5" id="message" name="message"></textarea>
+            </div>
+            
+            <div>
+                <!-- <label for="subject">Subject: </label>
+                <select id="subject">
+                    <optgroup label="Product Issues">
+                        <option value="returns">Returns</option>
+                        <option value="faulty_items">Faulty Item</option>
+                    </optgroup>
+                    <optgroup label="Delivery">
+                        <option value="delivery">Delivery Info</option>
+                        <option value="order_tracking">Track My Orders</option>
+                    </optgroup>
+                    <optgroup label="Miscellaneous">
+                        <option value="advice">Advice</option>
+                        <option value="others">Other</option>
+                    </optgroup>
+                </select>
+            </div> -->
+
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" list="subjects" id="subject" placeholder="Enter Your Subject">
+                <datalist id="subjects">
+                    <option value="returns">
+                    <option value="faulty item">
+                    <option value="delivery">
+                    <option value="order tracking">
+                    <option value="advice">
+                    <option value="other">
+                </datalist>
+            </div>
+
+            <div>
+                <p>Subscribe to Future Offers By:</p>
+                <label for="newsletter">Newsletter</label>
+                <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+
+                <label for="email">Email</label>
+                <input type="checkbox" id="email" name="subscribe" value="email">
+
+                <label for="post">Post</label>
+                <input type="checkbox" id="post" name="subscribe" value="post">
+            </div>
+
+            <div>
+                <p>How Would You Like Us to Respond?</p>
+                <label for="phoneResponse">Phone</label>
+                <input type="radio" id="phoneResponse" name="response" value="phone">
+
+                <label for="emailResponse">Email</label>
+                <input type="radio" id="phoneResponse" name="response" value="email">
+            </div>
+
+            <div>
+                <!-- <input type="submit"> -->
+                <button type="submit">Submit</button>
+                <input type="reset">
+            </div>
+
+        </form>
+
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj61dQgK6j4AR4GeTYWZsKWw&key=AIzaSyDMcb0vz6pRppRv6jVk7ZQ2MJit8w5m6Ck"></iframe> 
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">shop</a></li>
+                <li><a href="contact.html">contacts</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
